@@ -8,6 +8,6 @@ const UserSchema = new mongoose.Schema({
   token: { type: String },
 });
 
-const People = mongoose.model("User", UserSchema);
+const User = mongoose.model("User", UserSchema);
 
 module.exports = User;

@@ -11,6 +11,18 @@ const express = require("express");
 // create application object
 const app = express();
 
+// add this - import middlware
+const cors = require("cors");
+
+
+///////////////////////////////
+// MiddleWare
+////////////////////////////////
+app.use(cors()); // to prevent cors errors, open access to all origins
+app.use(express.urlencoded({extended: true}))
+app.use(express.json()); // parse json bodies
+
+
 //import all available routes in our /routes/index.js the user can use
 const routes = require('./routes/index')
 
