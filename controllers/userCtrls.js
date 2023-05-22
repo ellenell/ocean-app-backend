@@ -1,4 +1,8 @@
 const db = require('../models') //this is where our db mongoose connection lives as well as our models
+const express = require("express");
+// const bcrypt = require("bcryptjs");
+
+const User = db.User;
 
 // USER INDEX ROUTE
 const getUser = (req, res) => {

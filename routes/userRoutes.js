@@ -3,9 +3,9 @@ const { userCtrl } = require('../controllers') //all functions/methods imported 
 
 // ROUTES - METHODS //
 router.get('/', userCtrl.getUser)
-router.post('/', userCtrl.createUser)
-router.get('/users/:id', userCtrl.getUserById); // find user by ID
-router.post('/register', userCtrl.registerUser); // register user
-router.post('/login', userCtrl.loginUser); // login user
+// router.post('/', userCtrl.createUser)
+// router.get('/users/:id', userCtrl.getUserById); // find user by ID
+// router.post('/register', userCtrl.registerUser); // register user
+// router.post('/login', userCtrl.loginUser); // login user
 
 module.exports = router;
