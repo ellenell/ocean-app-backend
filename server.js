@@ -14,6 +14,7 @@ const app = express();
 // add this - import middlware
 const cors = require("cors");
 
+const bodyParser = require('body-parser');
 
 ///////////////////////////////
 // MiddleWare

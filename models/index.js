@@ -17,5 +17,6 @@ mongoose.connection
   .on("error", (error) => console.log(error));
 
   module.exports = {
-    User: require('./User.js')
+    Blog: require("./Blog.js"),
+    // User: require('./User.js')
 }
