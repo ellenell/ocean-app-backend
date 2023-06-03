@@ -8,12 +8,17 @@ router.get('/blog', blogCtrl.getBlog);
 router.post('/blog/create', blogCtrl.createBlog);
 
 // UPDATE a blog by ID
-router.put('/:id', blogCtrl.updateBlog);
+router.put('/blog/edit/:id', blogCtrl.updateBlog);
+
+// GET a blog by ID for editing
+router.get('/blog/edit/:id', blogCtrl.getBlogForEdit);
+
+// added a get for my edit route 
 
 // GET a blog by ID
 router.get('/:id', blogCtrl.showBlog);
 
 // DELETE a blog by ID
-router.delete('/:id', blogCtrl.deleteBlog);
+router.delete('/blog/:id', blogCtrl.deleteBlog);
 
 module.exports = router;

@@ -8,7 +8,10 @@ const BlogSchema = new mongoose.Schema({
   name: { type: String},
   image: { type: String },
   description: { type: String },
-  typeofactivity: { type: String },
+  typeofactivity: { 
+    type: String,
+    enum: ['Surfing', 'Kayaking', 'Sailing', 'Swimming']
+   },
 
 });
 

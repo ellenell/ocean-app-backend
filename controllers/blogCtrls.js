@@ -45,6 +45,16 @@ const updateBlog = (req, res) => {
       }
   })
 }
+// GET BLOG FOR EDIT ROUTE 
+const getBlogForEdit = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const blog = await db.Blog.findById(id);
+    res.json(blog);
+  } catch (error) {
+    res.status(500).json({ error: 'Unable to fetch blog post for editing' });
+  }
+};
 
 // BLOG SHOW ROUTE
 const showBlog = (req, res) => {
@@ -65,7 +75,7 @@ const deleteBlog = (req, res) => {
       if(!deletedBlog){
           res.status(400).json({message: 'Cannot delete Blog'})
       } else {
-          res.status(201).json({data: updatedBlog, message: 'Blog deleted'})
+          res.status(201).json({data: deletedBlog, message: 'Blog deleted'})
       }
   })
 }
@@ -75,6 +85,7 @@ module.exports = {
   getBlog, 
   createBlog,
   updateBlog,
+  getBlogForEdit,
   showBlog, 
   deleteBlog,
 }
