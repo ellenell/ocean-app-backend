@@ -8,12 +8,13 @@ const BlogSchema = new mongoose.Schema({
   name: { type: String},
   image: { type: String },
   description: { type: String },
-  typeofactivity: { 
+  typeOfActivity: { 
     type: String,
-    enum: ['Surfing', 'Kayaking', 'Sailing', 'Swimming']
+    enum: ['Surfing', 'Kayaking', 'Sailing', 'Snorkeling']
    },
 
 });
+
 
 const Blog = mongoose.model("Blog", BlogSchema);
 

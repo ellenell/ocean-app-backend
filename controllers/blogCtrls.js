@@ -34,6 +34,7 @@ const createBlog = (req, res) => {
     })
 }
 
+
 // BLOG UPDATE ROUTE
 const updateBlog = (req, res) => {
   db.Blog.findByIdAndUpdate(req.params.id, req.body, {new: true})
@@ -56,6 +57,7 @@ const getBlogForEdit = async (req, res) => {
   }
 };
 
+
 // BLOG SHOW ROUTE
 const showBlog = (req, res) => {
   db.Blog.findById(req.params.id, req.body, {new: true})
@@ -68,6 +70,7 @@ const showBlog = (req, res) => {
   })
 }
 
+
 // BLOG DELETE ROUTE
 const deleteBlog = (req, res) => {
   db.Blog.findByIdAndDelete(req.params.id)
@@ -79,6 +82,7 @@ const deleteBlog = (req, res) => {
       }
   })
 }
+
 
 
 module.exports = {

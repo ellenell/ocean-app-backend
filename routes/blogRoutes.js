@@ -4,9 +4,6 @@ const { blogCtrl } = require('../controllers');
 // GET all blogs
 router.get('/blog', blogCtrl.getBlog);
 
-// CREATE a new blog
-router.post('/blog/create', blogCtrl.createBlog);
-
 // UPDATE a blog by ID
 router.put('/blog/edit/:id', blogCtrl.updateBlog);
 
@@ -14,6 +11,10 @@ router.put('/blog/edit/:id', blogCtrl.updateBlog);
 router.get('/blog/edit/:id', blogCtrl.getBlogForEdit);
 
 // added a get for my edit route 
+
+// CREATE a new blog
+router.post('/blog/create', blogCtrl.createBlog);
+
 
 // GET a blog by ID
 router.get('/:id', blogCtrl.showBlog);
