@@ -6,6 +6,7 @@ const mongoose = require('mongoose')
 const BlogSchema = new mongoose.Schema({
   date: { type: Date },
   name: { type: String},
+  by: { type: String},
   image: { type: String },
   description: { type: String },
   typeOfActivity: { 
