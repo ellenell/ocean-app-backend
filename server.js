@@ -14,6 +14,7 @@ const app = express();
 // add this - import middlware
 const cors = require("cors");
 
+
 const bodyParser = require('body-parser');
 
 ///////////////////////////////
@@ -27,6 +28,8 @@ app.use(express.json()); // parse json bodies
 //import all available routes in our /routes/index.js the user can use
 const routes = require('./routes/index')
 
+// const uploadRoutes = require('./routes/uploadRoutes'); 
+
 ///////////////////////////////
 // ROUTES
 ////////////////////////////////
@@ -34,6 +37,8 @@ const routes = require('./routes/index')
 // app.get("/", (req, res) => {
 //     res.send("hello world");
 // });
+
+// app.use('/upload', uploadRoutes); 
 
 app.use('/', routes) //check the routes index.js for ALL routes so we save space on server.js
 

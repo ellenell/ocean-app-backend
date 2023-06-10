@@ -15,11 +15,11 @@ router.get('/blog/edit/:id', blogCtrl.getBlogForEdit);
 // CREATE a new blog
 router.post('/blog/create', blogCtrl.createBlog);
 
-
 // GET a blog by ID
 router.get('/:id', blogCtrl.showBlog);
 
 // DELETE a blog by ID
 router.delete('/blog/:id', blogCtrl.deleteBlog);
+
 
 module.exports = router;
