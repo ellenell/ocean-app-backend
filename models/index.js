@@ -18,5 +18,5 @@ mongoose.connection
 
   module.exports = {
     Blog: require("./Blog.js"),
-    // User: require('./User.js')
+    User: require('./User.js')
 }

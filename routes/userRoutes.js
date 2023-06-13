@@ -1,9 +1,9 @@
 // const router = require('express').Router();
-// const { userCtrl } = require('../controllers') //all functions/methods imported from people's controller's index.js
+// const { getUser, createUser } = require('../controllers/userControllers');
 
 // // ROUTES - METHODS //
-// router.get('/:id', userCtrl.getUser)
-// router.get('/', userCtrl.getAllUsers)
+// router.get('/', getUser);
+// router.post('/', createUser);
 // // router.post('/', userCtrl.createUser)
 // // router.get('/users/:id', userCtrl.getUserById); // find user by ID
 // // router.post('/register', userCtrl.registerUser); // register user

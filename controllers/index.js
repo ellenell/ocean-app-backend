@@ -1,4 +1,4 @@
 module.exports = {
-  // userCtrl: require('./userCtrls.js'),
+  userCtrl: require('./userCtrls.js'),
   blogCtrl: require('./blogCtrls.js') 
 }
