@@ -24,6 +24,11 @@ app.use(cors()); // to prevent cors errors, open access to all origins
 app.use(express.urlencoded({extended: true}))
 app.use(express.json()); // parse json bodies
 
+// DATABASE CONNECTION 
+// mongoose.connect(process.env.DATABASE_URL, {
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true,
+// });
 
 //import all available routes in our /routes/index.js the user can use
 const routes = require('./routes/index')

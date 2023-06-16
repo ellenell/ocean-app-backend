@@ -4,7 +4,7 @@ const { DATABASE_URL } = process.env
 // DATABASE CONNECTION
 ////////////////////////////////
 // Establish Connection
-mongoose.connect(DATABASE_URL, {
+mongoose.connect(process.env.DATABASE_URL, {
   useUnifiedTopology: true,
   useNewUrlParser: true,
 });
